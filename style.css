@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* BLACK LEGEND: 1darkest - 2bit lighter - 3most lighter */
+--spotify-blk1: black;
+--spotify-blk2: #222326;
+--spotify-blk3-transp: rgba(0, 0, 0, 0.432);
+
+
+--spotify-button-gray: #616467;
+--spotify-text-grey: #919496;
+
+--spotify-green: #1DB954;
+--spotify-hover-green: #1ed760;
+}
+
+/* body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: var(--spotify-blk-bg) ;
+
+  display: grid;
+  grid-template: 
+  "h s" 50px 
+  "h m" 1fr
+  "f f" 60px /
+  100px 1fr;
+} */
+
+/* BASE STYLING  */
+h1 {
+  /* font-size: 0.8rem;
+  color: var(--spotify-text-grey); */
+}
+
+h2 {
+  font-size: 0.8rem;
+  color: var(--spotify-text-grey);
+}
+
+h4 {
+  font-size: 0.8rem;
+  color: var(--spotify-text-grey);
+}
+
+/* UTILITY CLASSES */
+.icon {
+  width: 50px;
+}
+
+.cap {
+  text-transform: capitalize;
+}

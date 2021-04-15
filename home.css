@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+
+  display: grid;
+  grid-template: 
+  "h     s" 50px 
+  "h     m" 1fr
+  "f     f" 70px /
+  150px  1fr;
+}
+
+header {
+  grid-area: h;
+  background-color: var(--spotify-blk1);
+}
+
+section {
+  grid-area: s;
+  background-color: var(--spotify-blk3-transp);
+}
+
+main {
+  grid-area: m;
+  background-color: var(--spotify-blk2);
+}
+
+footer {
+  grid-area: f;
+  background-color: var(--spotify-blk2);
+  border-top: 1px solid #fff;
+}
