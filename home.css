@@ -7,26 +7,81 @@ body {
   "h     s" 50px 
   "h     m" 1fr
   "f     f" 70px /
-  150px  1fr;
+  200px  1fr;
 }
 
+/* HEADER___________________________________  */
 header {
   grid-area: h;
-  background-color: var(--spotify-blk1);
+
+  background-color: var(--spotify-side);
+  padding: 30px;  
 }
 
+.nav-1 {
+  /* background-color: teal; */
+  padding: 30px 0;
+  display: grid;
+  gap: 10px;
+}
+
+.nav-2 {
+  /* background-color: rgb(28, 39, 133); */
+}
+
+.nav-2 h3, 
+.nav-2 a,
+.nav-2 h4 {
+  padding: 10px 0;
+
+}
+
+.nav-2 h3 {
+  font-size: 1rem;
+}
+
+.nav-2 a {
+  color: var(--spotify-text);
+
+  font-size: 0.9rem;
+}
+
+.space {
+  margin-top: 60%;
+}
+
+.bottom-part .prof-name {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bottom-part .prof-name:hover {
+  color: var(--spotify-color-hover);
+}
+
+
+
+
+
+
+/* bar on top SECTION__________________________________________ */
 section {
   grid-area: s;
-  background-color: var(--spotify-blk3-transp);
+  background-color: var(--spotify-top);
 }
 
+/* MAIN_______________________________ */
 main {
   grid-area: m;
-  background-color: var(--spotify-blk2);
+  background-color: var(--spotify-back);
 }
 
+
+/* FOOTER_______________________________  */
 footer {
   grid-area: f;
-  background-color: var(--spotify-blk2);
-  border-top: 1px solid #fff;
+  background-color: var(--spotify-back);
+
+  border-top: 1px solid var(--spotify-text);
 }

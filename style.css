@@ -6,30 +6,18 @@
 
 html {
   /* BLACK LEGEND: 1darkest - 2bit lighter - 3most lighter */
---spotify-blk1: black;
---spotify-blk2: #222326;
---spotify-blk3-transp: rgba(0, 0, 0, 0.432);
+--spotify-side: black;
+--spotify-back: #222326;
+--spotify-top: rgba(0, 0, 0, 0.74);
 
+--spotify-button: #616467;
+--spotify-text: #919496;
+--spotify-text-light: aliceblue;
 
---spotify-button-gray: #616467;
---spotify-text-grey: #919496;
+--spotify-color: #1DB954;
+--spotify-color-hover: #1ed760;
 
---spotify-green: #1DB954;
---spotify-hover-green: #1ed760;
 }
-
-/* body {
-  min-height: 100vh;
-  font-family: sans-serif;
-  background-color: var(--spotify-blk-bg) ;
-
-  display: grid;
-  grid-template: 
-  "h s" 50px 
-  "h m" 1fr
-  "f f" 60px /
-  100px 1fr;
-} */
 
 /* BASE STYLING  */
 h1 {
@@ -38,20 +26,60 @@ h1 {
 }
 
 h2 {
-  font-size: 0.8rem;
-  color: var(--spotify-text-grey);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--spotify-text);
+}
+
+h3 {
+  color: var(--spotify-text-light);
+  font-weight: 600;
 }
 
 h4 {
   font-size: 0.8rem;
-  color: var(--spotify-text-grey);
+  color: var(--spotify-text);
+  font-weight: 600;
 }
+
+a {
+  text-decoration: none;
+  
+}
+
+/* img:hover .svg {
+  transition: 0.3s;
+  fill:#1DB954;
+} */
+
+a:hover h2,
+a:hover h4 {
+  color: #fff;
+  transition: 0.8s;
+  /* animation: alternate-reverse; */
+}
+
 
 /* UTILITY CLASSES */
 .icon {
-  width: 50px;
+  width: 25px;
 }
 
-.cap {
-  text-transform: capitalize;
+.icon2 {
+  width: 25px;
+}
+
+.upp {
+  text-transform: uppercase;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  margin: 5px;
+}
+
+.border-b {
+  border-bottom: 1px solid var(--spotify-text);
 }
