@@ -5,7 +5,6 @@
 }
 
 html {
-  /* BLACK LEGEND: 1darkest - 2bit lighter - 3most lighter */
 --spotify-side: black;
 --spotify-back: #17171f;
 --spotify-top: rgba(0, 0, 0, 0.938);
@@ -29,21 +28,22 @@ h2 {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--spotify-text);
+  /* transition: 1s; */
 }
 
 h3 {
   color: var(--spotify-text-light);
   font-weight: 600;
+  /* transition: 1s; */
+
 }
 
 h4 {
   font-size: 0.8rem;
   color: var(--spotify-text);
   font-weight: 600;
-}
+  /* transition: 1s; */
 
-a {
-  text-decoration: none;
 }
 
 p {
@@ -52,13 +52,21 @@ p {
   font-weight: 600;
 }
 
+a {
+  text-decoration: none;
+  transition: 1s;
+}
+
+button {
+  transition: 1s;
+}
+
+
 
 /* img:hover .svg {
   transition: 0.3s;
   fill:#1DB954;
 } */
-
-
 
 a:hover h2,
 a:hover h4 {
@@ -99,4 +107,26 @@ h2.prof-name:hover {
 
 .border-b {
   border-bottom: 1px solid var(--spotify-text);
+}
+
+
+/* scollbar  */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #17171f; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #17171f; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1ed760; 
 }

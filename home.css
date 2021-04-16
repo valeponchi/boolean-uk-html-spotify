@@ -1,13 +1,13 @@
 body {
-  min-height: 100vh;
+  height: 100vh;
   font-family: sans-serif;
 
   display: grid;
   grid-template: 
-  "h     s" 70px 
+  "h     s" 50px 
   "h     m" 1fr
-  "f     f" 80px /
-  200px  1fr;
+  "f     f" auto /
+  auto  1fr;
 }
 
 /* HEADER___________________________________  */
@@ -19,7 +19,6 @@ header {
 }
 
 .nav-1 {
-  /* background-color: teal; */
   padding: 20px 0;
   display: grid;
   gap: 10px;
@@ -60,6 +59,9 @@ header {
   display: grid;
   justify-items: right;
   align-items: center;
+
+  position: sticky;
+
 }
 
 .top-part button {
@@ -84,13 +86,57 @@ button:hover {
   transition: 0.8s;
 }
 
-
-
 /* MAIN_______________________________ */
 main {
   grid-area: m;
   background-color: var(--spotify-back);
+
+  overflow: scroll;
 }
+
+.main-header {
+  background-color: var(--spotify-back);
+
+  display: grid;
+  place-items: center;
+  height: 50px;
+}
+
+.main-header-wrapper {
+  display: grid;
+  
+  grid-auto-flow: column;
+  gap: 15px;
+}
+
+.files-wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+.file iframe,
+.file .size-file {
+  width: 200px;
+  height: 200px; 
+  margin-bottom: 10px;
+}
+
+.file img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER_______________________________  */
@@ -126,6 +172,11 @@ footer h3 a:hover {
   width: 20px;
 }
 
+.icon-small .heart svg:hover {
+  fill="#1DB954"
+  stroke="#1DB954"  
+}
+
 .controller {
   display: grid;
   padding-left: center;
@@ -137,7 +188,9 @@ footer h3 a:hover {
   grid-template-columns: 40px 20px 200px 20px;
 }
 
-
+.lower-line .listened {
+  color: var(--spotify-color);
+}
 
 /* volume slider ____in_footer____right________ */
 .slider {
