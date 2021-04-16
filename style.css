@@ -7,8 +7,8 @@
 html {
   /* BLACK LEGEND: 1darkest - 2bit lighter - 3most lighter */
 --spotify-side: black;
---spotify-back: #222326;
---spotify-top: rgba(0, 0, 0, 0.74);
+--spotify-back: #17171f;
+--spotify-top: rgba(0, 0, 0, 0.938);
 
 --spotify-button: #616467;
 --spotify-text: #919496;
@@ -44,19 +44,31 @@ h4 {
 
 a {
   text-decoration: none;
-  
 }
+
+p {
+  font-size: 0.8rem;
+  color: var(--spotify-text);
+  font-weight: 600;
+}
+
 
 /* img:hover .svg {
   transition: 0.3s;
   fill:#1DB954;
 } */
 
+
+
 a:hover h2,
 a:hover h4 {
   color: #fff;
   transition: 0.8s;
   /* animation: alternate-reverse; */
+}
+
+h2.prof-name:hover {
+  color: var(--spotify-color-hover);
 }
 
 
@@ -67,6 +79,11 @@ a:hover h4 {
 
 .icon2 {
   width: 25px;
+}
+
+.icon3 {
+  width: 100px;
+  margin-right: 10px;
 }
 
 .upp {

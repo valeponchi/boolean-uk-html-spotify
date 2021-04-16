@@ -4,9 +4,9 @@ body {
 
   display: grid;
   grid-template: 
-  "h     s" 50px 
+  "h     s" 70px 
   "h     m" 1fr
-  "f     f" 70px /
+  "f     f" 80px /
   200px  1fr;
 }
 
@@ -20,34 +20,29 @@ header {
 
 .nav-1 {
   /* background-color: teal; */
-  padding: 30px 0;
+  padding: 20px 0;
   display: grid;
   gap: 10px;
-}
-
-.nav-2 {
-  /* background-color: rgb(28, 39, 133); */
 }
 
 .nav-2 h3, 
 .nav-2 a,
 .nav-2 h4 {
   padding: 10px 0;
-
 }
 
 .nav-2 h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .nav-2 a {
   color: var(--spotify-text);
-
   font-size: 0.9rem;
 }
 
-.space {
-  margin-top: 60%;
+.bottom-part .space {
+  margin-top: 40%;
+  margin-bottom: 10px;
 }
 
 .bottom-part .prof-name {
@@ -56,20 +51,40 @@ header {
   font-weight: 600;
 }
 
-.bottom-part .prof-name:hover {
-  color: var(--spotify-color-hover);
-}
-
-
-
-
-
 
 /* bar on top SECTION__________________________________________ */
-section {
+.top-part {
   grid-area: s;
   background-color: var(--spotify-top);
+
+  display: grid;
+  justify-items: right;
+  align-items: center;
 }
+
+.top-part button {
+  margin-right: 30px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background-color: black;
+} 
+
+.top-part button a {
+color: #fff;
+}
+
+button:hover a {
+  color: var(--spotify-color-hover);
+  transition: 0.8s;
+}
+
+button:hover {
+  border: 1px solid var(--spotify-color-hover);
+  transition: 0.8s;
+}
+
+
 
 /* MAIN_______________________________ */
 main {
@@ -84,4 +99,71 @@ footer {
   background-color: var(--spotify-back);
 
   border-top: 1px solid var(--spotify-text);
+
+  display: grid;
+  grid-template-columns: 1fr 60px 3fr 1fr;
+  align-items: center;
+}
+
+footer h3 a {
+  color: var(--spotify-text);
+  font-size: 0.8rem;
+}
+
+footer .wrap-song-artist:hover a {
+  transition: 0.8s;
+}
+
+footer h3 a:hover {
+  color: var(--spotify-text-light);
+  font-size: 0.8rem;
+}
+.icon-small {
+  align-content: center;
+}
+
+.icon-small img {
+  width: 20px;
+}
+
+.controller {
+  display: grid;
+  padding-left: center;
+  justify-items: center;
+}
+
+.lower-line {
+  display: grid;
+  grid-template-columns: 40px 20px 200px 20px;
+}
+
+
+
+/* volume slider ____in_footer____right________ */
+.slider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* appearance: none; */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background:var(--spotify-color);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
 }
